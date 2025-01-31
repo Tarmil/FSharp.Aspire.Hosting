@@ -17,6 +17,9 @@
     <ProjectReference Include="..\SampleWebApp\SampleWebApp.fsproj" />
     <ProjectReference Include="..\SampleWebService\SampleWebService.fsproj" />
   </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.0.0" />
+  </ItemGroup>
   <!-- In a real project, this would be added automatically by the NuGet reference to FSharp.Aspire.Hosting.AppHost -->
   <Import Project="../../build/FSharp.Aspire.Hosting.targets" />
   <Import Project="..\..\.paket\Paket.Restore.targets" />
