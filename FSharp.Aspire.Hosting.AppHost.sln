@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".paket", ".paket", "{8382406C-A5FB-46B4-B303-15EFB0DC2CDB}"
+	ProjectSection(SolutionItems) = preProject
+		paket.dependencies = paket.dependencies
+		paket.lock = paket.lock
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{776B8C4F-7176-404D-BFA5-C02188911DB3}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Aspire.Hosting.AppHost", "src\FSharp.Aspire.Hosting.AppHost\FSharp.Aspire.Hosting.AppHost.fsproj", "{2350AAA3-4C80-43FE-ABAF-EAEFAAB18FF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sample", "sample", "{366B0B7A-A5B7-4936-A5A6-7CD76C09CF47}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleAppHost", "sample\SampleAppHost\SampleAppHost.fsproj", "{3C4851E7-8265-45B3-9F14-64476FB811C5}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleWebApp", "sample\SampleWebApp\SampleWebApp.fsproj", "{2BB8A63A-E6BE-4045-91AB-5FEE8A106412}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleWebService", "sample\SampleWebService\SampleWebService.fsproj", "{638B9F0D-DC38-4CA9-A047-AFAEFF3F2CC1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2350AAA3-4C80-43FE-ABAF-EAEFAAB18FF3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2350AAA3-4C80-43FE-ABAF-EAEFAAB18FF3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2350AAA3-4C80-43FE-ABAF-EAEFAAB18FF3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2350AAA3-4C80-43FE-ABAF-EAEFAAB18FF3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3C4851E7-8265-45B3-9F14-64476FB811C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C4851E7-8265-45B3-9F14-64476FB811C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C4851E7-8265-45B3-9F14-64476FB811C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C4851E7-8265-45B3-9F14-64476FB811C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2BB8A63A-E6BE-4045-91AB-5FEE8A106412}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2BB8A63A-E6BE-4045-91AB-5FEE8A106412}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2BB8A63A-E6BE-4045-91AB-5FEE8A106412}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2BB8A63A-E6BE-4045-91AB-5FEE8A106412}.Release|Any CPU.Build.0 = Release|Any CPU
+		{638B9F0D-DC38-4CA9-A047-AFAEFF3F2CC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{638B9F0D-DC38-4CA9-A047-AFAEFF3F2CC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{638B9F0D-DC38-4CA9-A047-AFAEFF3F2CC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{638B9F0D-DC38-4CA9-A047-AFAEFF3F2CC1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2350AAA3-4C80-43FE-ABAF-EAEFAAB18FF3} = {776B8C4F-7176-404D-BFA5-C02188911DB3}
+		{3C4851E7-8265-45B3-9F14-64476FB811C5} = {366B0B7A-A5B7-4936-A5A6-7CD76C09CF47}
+		{2BB8A63A-E6BE-4045-91AB-5FEE8A106412} = {366B0B7A-A5B7-4936-A5A6-7CD76C09CF47}
+		{638B9F0D-DC38-4CA9-A047-AFAEFF3F2CC1} = {366B0B7A-A5B7-4936-A5A6-7CD76C09CF47}
+	EndGlobalSection
+EndGlobal

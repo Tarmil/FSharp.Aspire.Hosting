@@ -1,0 +1,6 @@
+source https://api.nuget.org/v3/index.json
+storage none
+
+nuget Aspire.Hosting >= 9.0
+nuget Aspire.Hosting.AppHost
+nuget FSharp.Core

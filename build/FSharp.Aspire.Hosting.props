@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <!-- Suppress error for non-C# project -->
+    <Protobuf_Generator Condition=" '$(Protobuf_Generator)' == '' and '$(Language)' == 'F#' ">FSharp</Protobuf_Generator>
+  </PropertyGroup>
+</Project>

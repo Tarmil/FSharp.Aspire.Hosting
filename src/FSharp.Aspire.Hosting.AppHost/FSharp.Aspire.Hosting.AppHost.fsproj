@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <RootNamespace>Aspire.Hosting</RootNamespace>
+    <!-- Suppress error for non-C# project -->
+    <Protobuf_Generator Condition=" '$(Protobuf_Generator)' == '' and '$(Language)' == 'F#' ">FSharp</Protobuf_Generator>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="ResourceBuilderExtensions.fs" />
+    <Content Include="paket.references" />
+    <Content Include="paket.template" />
+  </ItemGroup>
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
+</Project>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <!-- Suppress warning for non-C# app host project -->
+    <NoWarn Condition="'$(Language)' == 'F#'">$(NoWarn);ASPIRE001</NoWarn>
+  </PropertyGroup>
+
+  <Target Name="_FSharpWriteProjectMetadataSources"
+          DependsOnTargets="CreateAspireProjectMetadataSources"
+          BeforeTargets="WriteAspireProjectMetadataSources"
+          Condition="'$(Language)' == 'F#'">
+    <ItemGroup>
+      <AspireProjectMetadataSource Update="@(AspireProjectMetadataSource)">
+        <Source>
+        <![CDATA[namespace Projects
+
+[<global.System.Diagnostics.DebuggerDisplay("Type = {GetType().Name,nq}, ProjectPath = {ProjectPath}")>]
+type ]]>%(ClassName)<![CDATA[() =
+  member _.ProjectPath = """]]>%(ProjectPath)<![CDATA["""
+  interface global.Aspire.Hosting.IProjectMetadata with
+    member this.ProjectPath = this.ProjectPath
+]]>
+        </Source>
+      </AspireProjectMetadataSource>
+    </ItemGroup>
+
+    <WriteLinesToFile File="$(_AspireIntermediatePath)references\%(AspireProjectMetadataSource.ClassName).ProjectMetadata.g.fs"
+                      Overwrite="true"
+                      Lines="%(AspireProjectMetadataSource.Source)"
+                      Encoding="Unicode"
+                      Condition="%(AspireProjectMetadataSource.ClassName) != ''"
+                      WriteOnlyWhenDifferent="true" />
+    <ItemGroup>
+      <FileWrites Include="$(_AspireIntermediatePath)references\%(AspireProjectMetadataSource.ClassName).ProjectMetadata.g.fs" />
+      <CompileBefore Include="$(_AspireIntermediatePath)references\%(AspireProjectMetadataSource.ClassName).ProjectMetadata.g.fs"
+                     Condition="%(AspireProjectMetadataSource.ClassName) != ''" />
+    </ItemGroup>
+  </Target>
+
+  <Target Name="_FSharpWriteHostProjectMetadataSources"
+          DependsOnTargets="CreateAspireHostProjectMetadataSources"
+          BeforeTargets="WriteAspireProjectMetadataSources"
+          Condition="'$(Language)' == 'F#'">
+    <ItemGroup>
+      <AspireHostProjectMetadataSource Update="@(AspireHostProjectMetadataSource)">
+        <Source>
+          <![CDATA[namespace Projects
+
+type internal ]]>%(ClassName)<![CDATA[() =
+  member _.ProjectPath = """]]>%(ProjectPath)<![CDATA["""
+]]>
+        </Source>
+      </AspireHostProjectMetadataSource>
+    </ItemGroup>
+
+    <WriteLinesToFile File="$(_AspireIntermediatePath)references\_AppHost.ProjectMetadata.g.fs"
+                      Overwrite="true"
+                      Lines="%(AspireHostProjectMetadataSource.Source)"
+                      Encoding="Unicode"
+                      WriteOnlyWhenDifferent="true" />
+    <ItemGroup>
+      <FileWrites Include="$(_AspireIntermediatePath)references\_AppHost.ProjectMetadata.g.fs" />
+      <CompileBefore Include="$(_AspireIntermediatePath)references\_AppHost.ProjectMetadata.g.fs" />
+    </ItemGroup>
+  </Target>
+
+</Project>

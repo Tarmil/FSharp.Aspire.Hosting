@@ -1,0 +1,262 @@
+STORAGE: NONE
+NUGET
+  remote: https://api.nuget.org/v3/index.json
+    Aspire.Hosting (9.0)
+      AspNetCore.HealthChecks.Uris (>= 8.0.1) - restriction: >= net8.0
+      Google.Protobuf (>= 3.28.2) - restriction: >= net8.0
+      Grpc.AspNetCore (>= 2.66) - restriction: >= net8.0
+      Grpc.Net.ClientFactory (>= 2.66) - restriction: >= net8.0
+      Grpc.Tools (>= 2.67) - restriction: >= net8.0
+      Humanizer.Core (>= 2.14.1) - restriction: >= net8.0
+      JsonPatch.Net (>= 3.1.1) - restriction: >= net8.0
+      KubernetesClient (>= 15.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 8.0) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Binder (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Diagnostics.HealthChecks (>= 8.0.11) - restriction: >= net8.0
+      Microsoft.Extensions.Hosting (>= 8.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Hosting.Abstractions (>= 8.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Http (>= 8.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Logging.Abstractions (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Options (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Primitives (>= 8.0) - restriction: >= net8.0
+      Polly.Core (>= 8.4.2) - restriction: >= net8.0
+    Aspire.Hosting.AppHost (9.0)
+      Aspire.Hosting (>= 9.0) - restriction: >= net8.0
+      AspNetCore.HealthChecks.Uris (>= 8.0.1) - restriction: >= net8.0
+      Google.Protobuf (>= 3.28.2) - restriction: >= net8.0
+      Grpc.AspNetCore (>= 2.66) - restriction: >= net8.0
+      Grpc.Net.ClientFactory (>= 2.66) - restriction: >= net8.0
+      Grpc.Tools (>= 2.67) - restriction: >= net8.0
+      Humanizer.Core (>= 2.14.1) - restriction: >= net8.0
+      JsonPatch.Net (>= 3.1.1) - restriction: >= net8.0
+      KubernetesClient (>= 15.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 8.0) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0) - restriction: >= net9.0
+      Microsoft.Extensions.Configuration.Binder (>= 8.0.2) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.Configuration.Binder (>= 9.0) - restriction: >= net9.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.2) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0) - restriction: >= net9.0
+      Microsoft.Extensions.Diagnostics.HealthChecks (>= 8.0.11) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.Diagnostics.HealthChecks (>= 9.0) - restriction: >= net9.0
+      Microsoft.Extensions.Hosting (>= 8.0.1) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.Hosting (>= 9.0) - restriction: >= net9.0
+      Microsoft.Extensions.Hosting.Abstractions (>= 8.0.1) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.Hosting.Abstractions (>= 9.0) - restriction: >= net9.0
+      Microsoft.Extensions.Http (>= 8.0.1) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.Http (>= 9.0) - restriction: >= net9.0
+      Microsoft.Extensions.Logging.Abstractions (>= 8.0.2) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0) - restriction: >= net9.0
+      Microsoft.Extensions.Options (>= 8.0.2) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.Options (>= 9.0) - restriction: >= net9.0
+      Microsoft.Extensions.Primitives (>= 8.0) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.Primitives (>= 9.0) - restriction: >= net9.0
+      Polly.Core (>= 8.4.2) - restriction: >= net8.0
+    AspNetCore.HealthChecks.Uris (9.0) - restriction: >= net8.0
+      Microsoft.Extensions.Diagnostics.HealthChecks (>= 8.0.11) - restriction: >= netstandard2.0
+      Microsoft.Extensions.Http (>= 8.0) - restriction: >= netstandard2.0
+    Fractions (8.1.1) - restriction: >= net8.0
+      Newtonsoft.Json (>= 13.0.3) - restriction: >= netstandard2.0
+    FSharp.Core (9.0.101)
+    Google.Protobuf (3.29.3) - restriction: >= net8.0
+    Grpc.AspNetCore (2.67) - restriction: >= net8.0
+      Google.Protobuf (>= 3.27) - restriction: >= net6.0
+      Grpc.AspNetCore.Server.ClientFactory (>= 2.67) - restriction: >= net6.0
+      Grpc.Tools (>= 2.67) - restriction: >= net6.0
+    Grpc.AspNetCore.Server (2.67) - restriction: >= net8.0
+      Grpc.Net.Common (>= 2.67) - restriction: >= net6.0
+    Grpc.AspNetCore.Server.ClientFactory (2.67) - restriction: >= net8.0
+      Grpc.AspNetCore.Server (>= 2.67) - restriction: >= net6.0
+      Grpc.Net.ClientFactory (>= 2.67) - restriction: >= net6.0
+    Grpc.Core.Api (2.67) - restriction: >= net8.0
+    Grpc.Net.Client (2.67) - restriction: >= net8.0
+      Grpc.Net.Common (>= 2.67) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 6.0) - restriction: || (>= net462) (>= netstandard2.0)
+    Grpc.Net.ClientFactory (2.67) - restriction: >= net8.0
+      Grpc.Net.Client (>= 2.67) - restriction: >= netstandard2.0
+      Microsoft.Extensions.Http (>= 6.0) - restriction: >= netstandard2.0
+    Grpc.Net.Common (2.67) - restriction: >= net8.0
+      Grpc.Core.Api (>= 2.67) - restriction: >= netstandard2.0
+    Grpc.Tools (2.69) - restriction: >= net8.0
+    Humanizer.Core (2.14.1) - restriction: >= net8.0
+    IdentityModel (7.0) - restriction: >= net8.0
+    IdentityModel.OidcClient (6.0) - restriction: >= net8.0
+      IdentityModel (>= 7.0) - restriction: >= netstandard2.0
+      Microsoft.Extensions.Logging.Abstractions (>= 8.0) - restriction: >= netstandard2.0
+    Json.More.Net (2.1.1) - restriction: >= net8.0
+    JsonPatch.Net (3.3) - restriction: >= net8.0
+      JsonPointer.Net (>= 5.2) - restriction: >= netstandard2.0
+    JsonPointer.Net (5.3) - restriction: >= net8.0
+      Humanizer.Core (>= 2.14.1) - restriction: >= netstandard2.0
+      Json.More.Net (>= 2.1) - restriction: >= netstandard2.0
+    KubernetesClient (16.0.2) - restriction: >= net8.0
+      Fractions (>= 7.3) - restriction: >= net8.0
+      IdentityModel.OidcClient (>= 6.0) - restriction: >= net8.0
+      System.IdentityModel.Tokens.Jwt (>= 8.3) - restriction: >= net8.0
+      YamlDotNet (>= 16.3) - restriction: >= net8.0
+    Microsoft.Bcl.AsyncInterfaces (9.0.1) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0))
+    Microsoft.Bcl.Memory (9.0.1) - restriction: || (&& (>= net462) (>= net8.0)) (&& (< net6.0) (>= net8.0)) (&& (>= net8.0) (< net9.0))
+    Microsoft.Extensions.Configuration (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Primitives (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Configuration.Abstractions (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Primitives (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Configuration.Binder (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Configuration.CommandLine (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Configuration.EnvironmentVariables (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Configuration.FileExtensions (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.FileProviders.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.FileProviders.Physical (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Primitives (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Configuration.Json (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.FileExtensions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.FileProviders.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      System.Text.Json (>= 9.0.1) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.1)) (&& (>= netstandard2.0) (< netstandard2.1))
+    Microsoft.Extensions.Configuration.UserSecrets (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Json (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.FileProviders.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.FileProviders.Physical (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.DependencyInjection (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.DependencyInjection.Abstractions (9.0.1) - restriction: >= net8.0
+    Microsoft.Extensions.Diagnostics (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Diagnostics.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options.ConfigurationExtensions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Diagnostics.Abstractions (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      System.Diagnostics.DiagnosticSource (>= 9.0.1) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
+    Microsoft.Extensions.Diagnostics.HealthChecks (9.0.1) - restriction: >= net8.0
+      Microsoft.Bcl.AsyncInterfaces (>= 9.0.1) - restriction: || (>= net462) (&& (< net9.0) (>= netstandard2.0))
+      Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Hosting.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions (9.0.1) - restriction: >= net8.0
+    Microsoft.Extensions.FileProviders.Abstractions (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Primitives (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.FileProviders.Physical (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.FileProviders.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.FileSystemGlobbing (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Primitives (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.FileSystemGlobbing (9.0.1) - restriction: >= net8.0
+    Microsoft.Extensions.Hosting (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Binder (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.CommandLine (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.EnvironmentVariables (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.FileExtensions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Json (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.UserSecrets (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.DependencyInjection (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Diagnostics (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.FileProviders.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.FileProviders.Physical (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Hosting.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Configuration (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Console (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Debug (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.EventLog (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.EventSource (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Hosting.Abstractions (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Diagnostics.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.FileProviders.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Http (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Diagnostics (>= 9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Logging (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Logging (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Logging.Abstractions (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      System.Diagnostics.DiagnosticSource (>= 9.0.1) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
+    Microsoft.Extensions.Logging.Configuration (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Binder (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options.ConfigurationExtensions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Logging.Console (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Configuration (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      System.Text.Json (>= 9.0.1) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
+    Microsoft.Extensions.Logging.Debug (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Logging.EventLog (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      System.Diagnostics.EventLog (>= 9.0.1) - restriction: || (&& (< net462) (>= netstandard2.0)) (>= net8.0)
+    Microsoft.Extensions.Logging.EventSource (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Primitives (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      System.Text.Json (>= 9.0.1) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
+    Microsoft.Extensions.Options (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Primitives (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Options.ConfigurationExtensions (9.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Configuration.Binder (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.Extensions.Primitives (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.Extensions.Primitives (9.0.1) - restriction: >= net8.0
+    Microsoft.IdentityModel.Abstractions (8.3.1) - restriction: >= net8.0
+    Microsoft.IdentityModel.JsonWebTokens (8.3.1) - restriction: >= net8.0
+      Microsoft.IdentityModel.Tokens (>= 8.3.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.IdentityModel.Logging (8.3.1) - restriction: >= net8.0
+      Microsoft.IdentityModel.Abstractions (>= 8.3.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Microsoft.IdentityModel.Tokens (8.3.1) - restriction: >= net8.0
+      Microsoft.Bcl.Memory (>= 9.0) - restriction: || (>= net462) (&& (>= net6.0) (< net8.0)) (&& (< net6.0) (>= netstandard2.0)) (&& (>= net8.0) (< net9.0))
+      Microsoft.Extensions.Logging.Abstractions (>= 8.0) - restriction: && (>= net8.0) (< net9.0)
+      Microsoft.Extensions.Logging.Abstractions (>= 9.0) - restriction: >= net9.0
+      Microsoft.IdentityModel.Logging (>= 8.3.1) - restriction: || (>= net462) (>= netstandard2.0)
+    Newtonsoft.Json (13.0.3) - restriction: >= net8.0
+    Polly.Core (8.5.1) - restriction: >= net8.0
+    System.Diagnostics.DiagnosticSource (9.0.1) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0))
+    System.Diagnostics.EventLog (9.0.1) - restriction: >= net8.0
+    System.IdentityModel.Tokens.Jwt (8.3.1) - restriction: >= net8.0
+      Microsoft.IdentityModel.JsonWebTokens (>= 8.3.1) - restriction: || (>= net462) (>= netstandard2.0)
+      Microsoft.IdentityModel.Tokens (>= 8.3.1) - restriction: || (>= net462) (>= netstandard2.0)
+    System.IO.Pipelines (9.0.1) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0)) (&& (>= net8.0) (< netstandard2.1))
+    System.Text.Encodings.Web (9.0.1) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0)) (&& (>= net8.0) (< netstandard2.1))
+    System.Text.Json (9.0.1) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0)) (&& (>= net8.0) (< netstandard2.1))
+      System.IO.Pipelines (>= 9.0.1) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
+      System.Text.Encodings.Web (>= 9.0.1) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
+    YamlDotNet (16.3) - restriction: >= net8.0

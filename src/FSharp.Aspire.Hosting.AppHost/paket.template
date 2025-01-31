@@ -1,0 +1,5 @@
+type project
+files
+    ../../build/FSharp.Aspire.Hosting.targets ==> build/net9.0
+dependencies
+    Aspire.Hosting.AppHost >= 9.0
