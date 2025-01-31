@@ -7,7 +7,7 @@
 
   <Target Name="_FSharpWriteProjectMetadataSources"
           DependsOnTargets="CreateAspireProjectMetadataSources"
-          BeforeTargets="WriteAspireProjectMetadataSources"
+          BeforeTargets="WriteAspireProjectMetadataSources;FSharpSourceCodeCompileOrder"
           Condition="'$(Language)' == 'F#'">
     <ItemGroup>
       <AspireProjectMetadataSource Update="@(AspireProjectMetadataSource)">
@@ -39,7 +39,7 @@ type ]]>%(ClassName)<![CDATA[() =
 
   <Target Name="_FSharpWriteHostProjectMetadataSources"
           DependsOnTargets="CreateAspireHostProjectMetadataSources"
-          BeforeTargets="WriteAspireProjectMetadataSources"
+          BeforeTargets="WriteAspireProjectMetadataSources;FSharpSourceCodeCompileOrder"
           Condition="'$(Language)' == 'F#'">
     <ItemGroup>
       <AspireHostProjectMetadataSource Update="@(AspireHostProjectMetadataSource)">

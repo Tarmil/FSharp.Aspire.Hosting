@@ -2,6 +2,7 @@
 .idea
 *.user
 *.log
+*.binlog
 tmp/
 bin/
 obj/
