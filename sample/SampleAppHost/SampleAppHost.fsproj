@@ -1,10 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project Sdk="Microsoft.NET.Sdk">
   <Sdk Name="Aspire.AppHost.Sdk" Version="9.0.0" />
-
   <!-- In a real project, this would be added automatically by the NuGet reference to FSharp.Aspire.Hosting.AppHost -->
   <Import Project="../../build/FSharp.Aspire.Hosting.props" />
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net9.0</TargetFramework>
@@ -19,8 +17,7 @@
     <ProjectReference Include="..\SampleWebApp\SampleWebApp.fsproj" />
     <ProjectReference Include="..\SampleWebService\SampleWebService.fsproj" />
   </ItemGroup>
-  <Import Project="..\..\.paket\Paket.Restore.targets" />
-
   <!-- In a real project, this would be added automatically by the NuGet reference to FSharp.Aspire.Hosting.AppHost -->
   <Import Project="../../build/FSharp.Aspire.Hosting.targets" />
+  <Import Project="..\..\.paket\Paket.Restore.targets" />
 </Project>

@@ -5,6 +5,7 @@ open Microsoft.Extensions.Hosting
 [<EntryPoint>]
 let main args =
     let builder = WebApplication.CreateBuilder(args)
+    builder.AddServiceDefaults()
     let app = builder.Build()
 
     app.MapGet("/", Func<string>(fun () -> "Hello World!")) |> ignore

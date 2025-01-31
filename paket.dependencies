@@ -4,3 +4,4 @@ storage none
 nuget Aspire.Hosting >= 9.0
 nuget Aspire.Hosting.AppHost
 nuget FSharp.Core
+nuget Microsoft.Extensions.ServiceDiscovery

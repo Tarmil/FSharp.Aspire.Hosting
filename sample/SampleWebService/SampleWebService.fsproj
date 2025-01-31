@@ -8,4 +8,8 @@
         <Compile Include="Program.fs"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\SampleServiceDefaults\SampleServiceDefaults.fsproj" />
+    </ItemGroup>
+
 </Project>

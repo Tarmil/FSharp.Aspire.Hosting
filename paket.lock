@@ -144,6 +144,7 @@ NUGET
       Microsoft.Extensions.Logging.Abstractions (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
       Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
     Microsoft.Extensions.Diagnostics.HealthChecks.Abstractions (9.0.1) - restriction: >= net8.0
+    Microsoft.Extensions.Features (9.0.1) - restriction: >= net8.0
     Microsoft.Extensions.FileProviders.Abstractions (9.0.1) - restriction: >= net8.0
       Microsoft.Extensions.Primitives (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
     Microsoft.Extensions.FileProviders.Physical (9.0.1) - restriction: >= net8.0
@@ -237,6 +238,24 @@ NUGET
       Microsoft.Extensions.Options (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
       Microsoft.Extensions.Primitives (>= 9.0.1) - restriction: || (>= net462) (>= netstandard2.0)
     Microsoft.Extensions.Primitives (9.0.1) - restriction: >= net8.0
+    Microsoft.Extensions.ServiceDiscovery (9.0)
+      Microsoft.Extensions.Configuration.Abstractions (>= 8.0) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Binder (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Features (>= 8.0.11) - restriction: >= net8.0
+      Microsoft.Extensions.Http (>= 8.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Logging.Abstractions (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Options (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Primitives (>= 8.0) - restriction: >= net8.0
+      Microsoft.Extensions.ServiceDiscovery.Abstractions (>= 9.0) - restriction: >= net8.0
+    Microsoft.Extensions.ServiceDiscovery.Abstractions (9.0) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 8.0) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Binder (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Features (>= 8.0.11) - restriction: >= net8.0
+      Microsoft.Extensions.Logging.Abstractions (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Options (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Primitives (>= 8.0) - restriction: >= net8.0
     Microsoft.IdentityModel.Abstractions (8.3.1) - restriction: >= net8.0
     Microsoft.IdentityModel.JsonWebTokens (8.3.1) - restriction: >= net8.0
       Microsoft.IdentityModel.Tokens (>= 8.3.1) - restriction: || (>= net462) (>= netstandard2.0)
