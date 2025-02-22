@@ -11,3 +11,6 @@ nuget Aspire.Hosting.Orleans
 nuget Aspire.Hosting.SqlServer
 nuget FSharp.Core >= 9.0
 nuget Microsoft.Extensions.ServiceDiscovery >= 9.0
+nuget Microsoft.SourceLink.GitHub 8.0.0 copy_local: true
+nuget System.Text.Json >= 9.0.2
+nuget Microsoft.IdentityModel.Abstractions >= 8.6
