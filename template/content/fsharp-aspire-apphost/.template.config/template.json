@@ -17,7 +17,7 @@
       "isRequired": false,
       "description": "The target framework for the project",
       "dataType": "choice",
-      "replaces": "TARGET_FRAMEWORK",
+      "replaces": "net8.0",
       "choices": [
         {"choice": "net8.0", "description": "Target net8.0"},
         {"choice": "net9.0", "description": "Target net9.0"}
