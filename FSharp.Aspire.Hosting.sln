@@ -27,6 +27,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Aspire.Hosting.Aws",
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Aspire.Hosting.Azure", "src\FSharp.Aspire.Hosting.Azure\FSharp.Aspire.Hosting.Azure.fsproj", "{306BA6B1-C988-4E9B-894C-4952676BD9D7}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Aspire.Hosting.Orleans", "src\FSharp.Aspire.Hosting.Orleans\FSharp.Aspire.Hosting.Orleans.fsproj", "{72EE1387-513A-4639-B513-B0618A580648}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -64,6 +66,10 @@ Global
 		{306BA6B1-C988-4E9B-894C-4952676BD9D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{306BA6B1-C988-4E9B-894C-4952676BD9D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{306BA6B1-C988-4E9B-894C-4952676BD9D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{72EE1387-513A-4639-B513-B0618A580648}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{72EE1387-513A-4639-B513-B0618A580648}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{72EE1387-513A-4639-B513-B0618A580648}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{72EE1387-513A-4639-B513-B0618A580648}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2350AAA3-4C80-43FE-ABAF-EAEFAAB18FF3} = {776B8C4F-7176-404D-BFA5-C02188911DB3}
@@ -73,5 +79,6 @@ Global
 		{761B1C20-7AC0-42D9-8905-1C51C64D376B} = {366B0B7A-A5B7-4936-A5A6-7CD76C09CF47}
 		{14011F86-17F8-4041-A604-A47369670E2C} = {776B8C4F-7176-404D-BFA5-C02188911DB3}
 		{306BA6B1-C988-4E9B-894C-4952676BD9D7} = {776B8C4F-7176-404D-BFA5-C02188911DB3}
+		{72EE1387-513A-4639-B513-B0618A580648} = {776B8C4F-7176-404D-BFA5-C02188911DB3}
 	EndGlobalSection
 EndGlobal

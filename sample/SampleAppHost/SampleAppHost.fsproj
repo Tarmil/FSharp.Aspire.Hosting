@@ -16,6 +16,7 @@
     <ProjectReference Include="..\..\src\FSharp.Aspire.Hosting.AppHost\FSharp.Aspire.Hosting.AppHost.fsproj" IsAspireProjectResource="false" />
     <ProjectReference Include="..\..\src\FSharp.Aspire.Hosting.Aws\FSharp.Aspire.Hosting.Aws.fsproj" IsAspireProjectResource="false" />
     <ProjectReference Include="..\..\src\FSharp.Aspire.Hosting.Azure\FSharp.Aspire.Hosting.Azure.fsproj" IsAspireProjectResource="false" />
+    <ProjectReference Include="..\..\src\FSharp.Aspire.Hosting.Orleans\FSharp.Aspire.Hosting.Orleans.fsproj" IsAspireProjectResource="false" />
     <ProjectReference Include="..\SampleWebApp\SampleWebApp.fsproj" />
     <ProjectReference Include="..\SampleWebService\SampleWebService.fsproj" />
   </ItemGroup>

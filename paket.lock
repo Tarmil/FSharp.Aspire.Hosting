@@ -107,6 +107,8 @@ NUGET
       Azure.Provisioning.Resources (>= 0.1) - restriction: >= net8.0
       Azure.Security.KeyVault.Secrets (>= 4.6) - restriction: >= net8.0
       System.IO.Hashing (>= 8.0) - restriction: >= net8.0
+    Aspire.Hosting.Orleans (8.0)
+      Aspire.Hosting.Azure (>= 8.0) - restriction: >= net8.0
     Aspire.Hosting.SqlServer (8.0)
       Aspire.Hosting (>= 8.0) - restriction: >= net8.0
     AspNetCore.HealthChecks.Uris (8.0.1) - restriction: >= net8.0
