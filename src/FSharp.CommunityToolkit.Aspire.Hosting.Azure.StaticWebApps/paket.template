@@ -1,0 +1,13 @@
+﻿type project
+version 9.0.0
+authors Loïc Denuzière
+projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
+repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
+repositoryType git
+licenseExpression Apache-2.0
+description
+    Provides extensions methods and resource definitions for the .NET Aspire AppHost in F# to support running Azure Static Web Apps locally using the emulator using the Azure Static Web App CLI
+tags aspire integration azure staticwebapps hosting fsharp f#
+readme README.md
+files
+    ../../README.md ==> .
