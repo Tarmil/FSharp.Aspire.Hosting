@@ -47,28 +47,47 @@ A number of Aspire integrations require additional code to be usable from an F# 
 The table below lists the Aspire integrations that have been checked to work with an F# AppHost, and the NuGet package required to use them.
 Some of them need an F#-specific package (which in turns references the standard package), and others simply need the same standard package as C# AppHosts.
 
-| Integration              | Package                                  |
-|:-------------------------|:-----------------------------------------|
-| AWS                      | **FSharp**.Aspire.Hosting.Aws            |
-| Azure AppInsights        | Aspire.Hosting.Azure.ApplicationInsights |
-| Azure Bicep              | **FSharp**.Aspire.Hosting.Azure          |
-| Azure Cognitive Services | Aspire.Hosting.Azure.CognitiveServices   |
-| Azure CosmosDB           | Aspire.Hosting.Azure.CosmosDB            |
-| Azure KeyVault           | Aspire.Hosting.Azure.KeyVault            |
-| Azure Redis              | Aspire.Hosting.Azure.Redis               |
-| Azure ServiceBus         | Aspire.Hosting.Azure.ServiceBus          |
-| Azure SQL                | Aspire.Hosting.Azure.Sql                 |
-| Azure Storage            | Aspire.Hosting.Azure.Storage             |
-| Dapr                     | Aspire.Hosting.Dapr                      |
-| Kafka                    | Aspire.Hosting.Kafka                     |
-| MongoDB                  | Aspire.Hosting.MongoDB                   |
-| MySQL                    | Aspire.Hosting.MySQL                     |
-| NodeJs                   | Aspire.Hosting.NodeJs                    |
-| Orleans                  | **FSharp**.Aspire.Hosting.Orleans        |
-| PostgreSQL               | Aspire.Hosting.PostgreSQL                |
-| RabbitMQ                 | Aspire.Hosting.RabbitMQ                  |
-| Redis                    | Aspire.Hosting.Redis                     |
-| SqlServer                | Aspire.Hosting.SqlServer                 |
+| Integration              | Package                                           |
+|:-------------------------|:--------------------------------------------------|
+| AWS                      | **FSharp**.Aspire.Hosting.Aws                     |
+| Azure AppConfiguration   | Aspire.Hosting.Azure.AppConfiguration             |
+| Azure AppInsights        | Aspire.Hosting.Azure.ApplicationInsights          |
+| Azure Bicep              | **FSharp**.Aspire.Hosting.Azure                   |
+| Azure Cognitive Services | Aspire.Hosting.Azure.CognitiveServices            |
+| Azure CosmosDB           | Aspire.Hosting.Azure.CosmosDB                     |
+| Azure EventHubs          | Aspire.Hosting.Azure.EventHubs                    |
+| Azure KeyVault           | Aspire.Hosting.Azure.KeyVault                     |
+| Azure PostgreSQL         | Aspire.Hosting.Azure.PostgreSQL                   |
+| Azure Redis              | Aspire.Hosting.Azure.Redis                        |
+| Azure Search             | Aspire.Hosting.Azure.Search                       |
+| Azure ServiceBus         | Aspire.Hosting.Azure.ServiceBus                   |
+| Azure SignalR            | Aspire.Hosting.Azure.SignalR                      |
+| Azure SQL                | Aspire.Hosting.Azure.Sql                          |
+| Azure Storage            | Aspire.Hosting.Azure.Storage                      |
+| Dapr                     | Aspire.Hosting.Dapr                               |
+| ElasticSearch            | Aspire.Hosting.ElasticSearch                      |
+| Garnet                   | Aspire.Hosting.Garnet                             |
+| Golang                   | CommunityToolkit.Aspire.Hosting.Golang            |
+| Java                     | CommunityToolkit.Aspire.Hosting.Java              |
+| Kafka                    | Aspire.Hosting.Kafka                              |
+| Keycloak                 | Aspire.Hosting.Keycloak                           |
+| Meilisearch              | Aspire.Hosting.Meilisearch                        |
+| MongoDB                  | Aspire.Hosting.MongoDB                            |
+| MySQL                    | Aspire.Hosting.MySQL                              |
+| NATS                     | Aspire.Hosting.NATS                               |
+| NodeJs                   | Aspire.Hosting.NodeJs                             |
+|                          | CommunityToolkit.Aspire.Hosting.NodeJs.Extensions |
+| Ollama                   | CommunityToolkit.Aspire.Hosting.Ollama            |
+| Oracle                   | Aspire.Hosting.Oracle                             |
+| Orleans                  | **FSharp**.Aspire.Hosting.Orleans                 |
+| PostgreSQL               | Aspire.Hosting.PostgreSQL                         |
+| Python                   | Aspire.Hosting.Python                             |
+| Qdrant                   | Aspire.Hosting.Qdrant                             |
+| RabbitMQ                 | Aspire.Hosting.RabbitMQ                           |
+| Redis                    | Aspire.Hosting.Redis                              |
+| Seq                      | Aspire.Hosting.Seq                                |
+| SqlServer                | Aspire.Hosting.SqlServer                          |
+| Valkey                   | Aspire.Hosting.Valkey                             |
 
 If you need an integration that is not listed above:
 
