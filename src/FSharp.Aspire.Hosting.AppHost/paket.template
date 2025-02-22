@@ -4,7 +4,7 @@ authors Loïc Denuzière
 projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryType git
-licenseExpression MIT
+licenseExpression Apache-2.0
 description
     Provides the core APIs and MSBuild logic for .NET Aspire AppHost projects in F#
 tags aspire hosting fsharp f#
