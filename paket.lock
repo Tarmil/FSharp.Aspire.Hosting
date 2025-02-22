@@ -99,12 +99,87 @@ NUGET
       Microsoft.Extensions.Primitives (>= 8.0) - restriction: >= net8.0
       Newtonsoft.Json (>= 13.0.3) - restriction: >= net8.0
       Polly.Core (>= 8.4.2) - restriction: >= net8.0
+    Aspire.Hosting.Azure (8.0)
+      Aspire.Hosting (>= 8.0) - restriction: >= net8.0
+      Azure.Identity (>= 1.11.2) - restriction: >= net8.0
+      Azure.Provisioning (>= 0.2) - restriction: >= net8.0
+      Azure.Provisioning.KeyVault (>= 0.1) - restriction: >= net8.0
+      Azure.Provisioning.Resources (>= 0.1) - restriction: >= net8.0
+      Azure.Security.KeyVault.Secrets (>= 4.6) - restriction: >= net8.0
+      System.IO.Hashing (>= 8.0) - restriction: >= net8.0
+    Aspire.Hosting.SqlServer (8.0)
+      Aspire.Hosting (>= 8.0) - restriction: >= net8.0
     AspNetCore.HealthChecks.Uris (8.0.1) - restriction: >= net8.0
       Microsoft.Extensions.Diagnostics.HealthChecks (>= 8.0) - restriction: >= netstandard2.0
       Microsoft.Extensions.Http (>= 8.0) - restriction: >= netstandard2.0
     AWSSDK.CloudFormation (3.7.400.36) - restriction: >= net8.0
       AWSSDK.Core (>= 3.7.400.36 < 4.0)
     AWSSDK.Core (3.7.400.36) - restriction: >= net8.0
+    Azure.Core (1.39) - restriction: >= net8.0
+      Microsoft.Bcl.AsyncInterfaces (>= 1.1.1) - restriction: || (>= net461) (>= netstandard2.0)
+      System.ClientModel (>= 1.0) - restriction: || (>= net461) (>= netstandard2.0)
+      System.Diagnostics.DiagnosticSource (>= 6.0.1) - restriction: || (>= net461) (>= netstandard2.0)
+      System.Memory.Data (>= 1.0.2) - restriction: || (>= net461) (>= netstandard2.0)
+      System.Numerics.Vectors (>= 4.5) - restriction: || (>= net461) (>= netstandard2.0)
+      System.Text.Encodings.Web (>= 4.7.2) - restriction: || (>= net461) (>= netstandard2.0)
+      System.Text.Json (>= 4.7.2) - restriction: || (>= net461) (>= netstandard2.0)
+      System.Threading.Tasks.Extensions (>= 4.5.4) - restriction: || (>= net461) (>= netstandard2.0)
+    Azure.Identity (1.11.2) - restriction: >= net8.0
+      Azure.Core (>= 1.38) - restriction: >= netstandard2.0
+      Microsoft.Identity.Client (>= 4.60.3) - restriction: >= netstandard2.0
+      Microsoft.Identity.Client.Extensions.Msal (>= 4.60.3) - restriction: >= netstandard2.0
+      System.Memory (>= 4.5.4) - restriction: >= netstandard2.0
+      System.Security.Cryptography.ProtectedData (>= 4.7) - restriction: >= netstandard2.0
+      System.Text.Json (>= 4.7.2) - restriction: >= netstandard2.0
+      System.Threading.Tasks.Extensions (>= 4.5.4) - restriction: >= netstandard2.0
+    Azure.Provisioning (0.2) - restriction: >= net8.0
+      Azure.Core (>= 1.39) - restriction: || (>= net461) (>= netstandard2.0)
+      Azure.ResourceManager (>= 1.11.1) - restriction: || (>= net461) (>= netstandard2.0)
+      Azure.ResourceManager.Authorization (>= 1.1.1) - restriction: || (>= net461) (>= netstandard2.0)
+      Azure.ResourceManager.ManagedServiceIdentities (>= 1.2.1) - restriction: || (>= net461) (>= netstandard2.0)
+      System.ClientModel (>= 1.0) - restriction: || (>= net461) (>= netstandard2.0)
+      System.Text.Json (>= 4.7.2) - restriction: || (>= net461) (>= netstandard2.0)
+    Azure.Provisioning.KeyVault (0.1) - restriction: >= net8.0
+      Azure.Core (>= 1.39) - restriction: >= netstandard2.0
+      Azure.Provisioning (>= 0.2) - restriction: >= netstandard2.0
+      Azure.ResourceManager.KeyVault (>= 1.2.1) - restriction: >= netstandard2.0
+      System.ClientModel (>= 1.0) - restriction: >= netstandard2.0
+      System.Text.Json (>= 4.7.2) - restriction: >= netstandard2.0
+    Azure.Provisioning.Resources (0.1) - restriction: >= net8.0
+      Azure.Core (>= 1.39) - restriction: >= netstandard2.0
+      Azure.Provisioning (>= 0.2) - restriction: >= netstandard2.0
+      Azure.ResourceManager.Resources (>= 1.7.1) - restriction: >= netstandard2.0
+      System.ClientModel (>= 1.0) - restriction: >= netstandard2.0
+      System.Text.Json (>= 4.7.2) - restriction: >= netstandard2.0
+    Azure.ResourceManager (1.11.1) - restriction: >= net8.0
+      Azure.Core (>= 1.39) - restriction: >= netstandard2.0
+      System.ClientModel (>= 1.0) - restriction: >= netstandard2.0
+      System.Text.Json (>= 4.7.2) - restriction: >= netstandard2.0
+    Azure.ResourceManager.Authorization (1.1.1) - restriction: >= net8.0
+      Azure.Core (>= 1.38) - restriction: >= netstandard2.0
+      Azure.ResourceManager (>= 1.11) - restriction: >= netstandard2.0
+      System.ClientModel (>= 1.0) - restriction: >= netstandard2.0
+      System.Text.Json (>= 4.7.2) - restriction: >= netstandard2.0
+    Azure.ResourceManager.KeyVault (1.2.1) - restriction: >= net8.0
+      Azure.Core (>= 1.38) - restriction: >= netstandard2.0
+      Azure.ResourceManager (>= 1.11) - restriction: >= netstandard2.0
+      System.ClientModel (>= 1.0) - restriction: >= netstandard2.0
+      System.Text.Json (>= 4.7.2) - restriction: >= netstandard2.0
+    Azure.ResourceManager.ManagedServiceIdentities (1.2.1) - restriction: >= net8.0
+      Azure.Core (>= 1.38) - restriction: >= netstandard2.0
+      Azure.ResourceManager (>= 1.11) - restriction: >= netstandard2.0
+      System.ClientModel (>= 1.0) - restriction: >= netstandard2.0
+      System.Text.Json (>= 4.7.2) - restriction: >= netstandard2.0
+    Azure.ResourceManager.Resources (1.7.1) - restriction: >= net8.0
+      Azure.Core (>= 1.38) - restriction: >= netstandard2.0
+      Azure.ResourceManager (>= 1.11) - restriction: >= netstandard2.0
+      System.ClientModel (>= 1.0) - restriction: >= netstandard2.0
+      System.Text.Json (>= 4.7.2) - restriction: >= netstandard2.0
+    Azure.Security.KeyVault.Secrets (4.6) - restriction: >= net8.0
+      Azure.Core (>= 1.37) - restriction: >= netstandard2.0
+      System.Memory (>= 4.5.4) - restriction: >= netstandard2.0
+      System.Text.Json (>= 4.7.2) - restriction: >= netstandard2.0
+      System.Threading.Tasks.Extensions (>= 4.5.4) - restriction: >= netstandard2.0
     Constructs (10.0) - restriction: >= net8.0
       Amazon.JSII.Runtime (>= 1.26 < 2.0) - restriction: >= netcoreapp3.1
     Fractions (7.3) - restriction: >= net8.0
@@ -145,7 +220,7 @@ NUGET
       IdentityModel.OidcClient (>= 5.2.1) - restriction: >= net6.0
       System.IdentityModel.Tokens.Jwt (>= 7.1.2) - restriction: >= net6.0
       YamlDotNet (>= 16.0) - restriction: >= net6.0
-    Microsoft.Bcl.AsyncInterfaces (9.0) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0))
+    Microsoft.Bcl.AsyncInterfaces (9.0) - restriction: >= net8.0
     Microsoft.Extensions.Configuration (9.0) - restriction: >= net8.0
       Microsoft.Extensions.Configuration.Abstractions (>= 9.0) - restriction: || (>= net462) (>= netstandard2.0)
       Microsoft.Extensions.Primitives (>= 9.0) - restriction: || (>= net462) (>= netstandard2.0)
@@ -306,6 +381,12 @@ NUGET
       Microsoft.Extensions.Logging.Abstractions (>= 8.0.2) - restriction: >= net8.0
       Microsoft.Extensions.Options (>= 8.0.2) - restriction: >= net8.0
       Microsoft.Extensions.Primitives (>= 8.0) - restriction: >= net8.0
+    Microsoft.Identity.Client (4.60.3) - restriction: >= net8.0
+      Microsoft.IdentityModel.Abstractions (>= 6.35) - restriction: || (&& (>= monoandroid12.0) (< net6.0)) (&& (< monoandroid12.0) (>= net6.0) (< xamarinios)) (&& (< monoandroid12.0) (< net6.0) (>= netstandard2.0) (< xamarinios)) (>= net462) (&& (< net6.0) (>= xamarinios)) (>= net6.0-android) (>= net6.0-ios) (>= net6.0-windows7.0)
+      System.Diagnostics.DiagnosticSource (>= 6.0.1) - restriction: || (&& (< monoandroid12.0) (>= net6.0) (< xamarinios)) (&& (< monoandroid12.0) (< net6.0) (>= netstandard2.0) (< xamarinios)) (>= net462) (>= net6.0-windows7.0)
+    Microsoft.Identity.Client.Extensions.Msal (4.60.3) - restriction: >= net8.0
+      Microsoft.Identity.Client (>= 4.60.3) - restriction: >= netstandard2.0
+      System.Security.Cryptography.ProtectedData (>= 4.5) - restriction: >= netstandard2.0
     Microsoft.IdentityModel.Abstractions (7.1.2) - restriction: >= net8.0
     Microsoft.IdentityModel.JsonWebTokens (7.1.2) - restriction: >= net8.0
       Microsoft.IdentityModel.Tokens (>= 7.1.2) - restriction: || (&& (>= net461) (< netstandard2.0)) (&& (< net461) (>= netstandard2.0)) (>= net462) (>= net6.0)
@@ -315,14 +396,29 @@ NUGET
       Microsoft.IdentityModel.Logging (>= 7.1.2) - restriction: || (&& (>= net461) (< netstandard2.0)) (&& (< net461) (>= netstandard2.0)) (>= net462) (>= net6.0)
     Newtonsoft.Json (13.0.3) - restriction: >= net8.0
     Polly.Core (8.4.2) - restriction: >= net8.0
-    System.Diagnostics.DiagnosticSource (9.0) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0))
+    System.Buffers (4.5.1) - restriction: || (&& (>= monoandroid) (>= net8.0) (< netstandard1.1)) (&& (< monoandroid) (>= net8.0) (< netstandard1.1)) (&& (< monoandroid) (>= net8.0) (< netstandard2.0)) (&& (>= monotouch) (>= net8.0)) (&& (>= net45) (>= net8.0) (< netstandard2.0)) (&& (>= net461) (>= net8.0)) (&& (>= net8.0) (< netcoreapp2.0)) (&& (>= net8.0) (< netstandard1.1) (>= win8)) (&& (>= net8.0) (< netstandard2.0) (>= wpa81)) (&& (>= net8.0) (>= xamarinios)) (&& (>= net8.0) (>= xamarinmac)) (&& (>= net8.0) (>= xamarintvos)) (&& (>= net8.0) (>= xamarinwatchos))
+    System.ClientModel (1.0) - restriction: >= net8.0
+      System.Memory.Data (>= 1.0.2) - restriction: >= netstandard2.0
+      System.Text.Json (>= 4.7.2) - restriction: >= netstandard2.0
+    System.Diagnostics.DiagnosticSource (9.0) - restriction: >= net8.0
     System.Diagnostics.EventLog (9.0) - restriction: >= net8.0
     System.IdentityModel.Tokens.Jwt (7.1.2) - restriction: >= net8.0
       Microsoft.IdentityModel.JsonWebTokens (>= 7.1.2) - restriction: || (&& (>= net461) (< netstandard2.0)) (&& (< net461) (>= netstandard2.0)) (>= net462) (>= net6.0)
       Microsoft.IdentityModel.Tokens (>= 7.1.2) - restriction: || (&& (>= net461) (< netstandard2.0)) (&& (< net461) (>= netstandard2.0)) (>= net462) (>= net6.0)
-    System.IO.Pipelines (9.0) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0)) (&& (>= net8.0) (< netstandard2.1))
-    System.Text.Encodings.Web (9.0) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0)) (&& (>= net8.0) (< netstandard2.1))
-    System.Text.Json (9.0) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0)) (&& (>= net8.0) (< netstandard2.1))
+    System.IO.Hashing (8.0) - restriction: >= net8.0
+    System.IO.Pipelines (9.0) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0))
+    System.Memory (4.5.4) - restriction: >= net8.0
+      System.Buffers (>= 4.5.1) - restriction: || (&& (>= monoandroid) (< netstandard1.1)) (&& (< monoandroid) (< net45) (>= netstandard1.1) (< netstandard2.0) (< win8) (< wpa81)) (&& (< monoandroid) (< netstandard1.1) (>= portable-net45+win8+wpa81) (< win8)) (>= monotouch) (&& (>= net45) (< netstandard2.0)) (&& (< net45) (< netcoreapp2.0) (>= netstandard2.0)) (>= net461) (&& (< netstandard1.1) (>= win8)) (&& (< netstandard2.0) (< uap10.1) (>= wpa81)) (>= xamarinios) (>= xamarinmac) (>= xamarintvos) (>= xamarinwatchos)
+      System.Runtime.CompilerServices.Unsafe (>= 4.5.3) - restriction: || (&& (>= monoandroid) (< netstandard1.1)) (&& (< monoandroid) (< net45) (>= netstandard1.1) (< netstandard2.0) (< win8) (< wpa81)) (&& (< monoandroid) (>= netcoreapp2.0) (< netcoreapp2.1)) (&& (< monoandroid) (< netstandard1.1) (>= portable-net45+win8+wpa81) (< win8)) (>= monotouch) (&& (>= net45) (< netstandard2.0)) (&& (< net45) (< netcoreapp2.0) (>= netstandard2.0)) (>= net461) (&& (< netstandard1.1) (>= win8)) (&& (< netstandard2.0) (>= wpa81)) (>= uap10.1) (>= xamarinios) (>= xamarinmac) (>= xamarintvos) (>= xamarinwatchos)
+    System.Memory.Data (1.0.2) - restriction: >= net8.0
+      System.Text.Encodings.Web (>= 4.7.2) - restriction: || (>= net461) (>= netstandard2.0)
+      System.Text.Json (>= 4.6) - restriction: || (>= net461) (>= netstandard2.0)
+    System.Numerics.Vectors (4.5) - restriction: >= net8.0
+    System.Runtime.CompilerServices.Unsafe (4.5.3) - restriction: || (&& (>= monoandroid) (>= net8.0) (< netstandard1.1)) (&& (< monoandroid) (>= net8.0) (< netcoreapp2.1)) (&& (< monoandroid) (>= net8.0) (< netstandard1.1)) (&& (< monoandroid) (>= net8.0) (< netstandard2.0)) (&& (>= monotouch) (>= net8.0)) (&& (>= net45) (>= net8.0) (< netstandard2.0)) (&& (>= net461) (>= net8.0)) (&& (>= net8.0) (< netcoreapp2.0)) (&& (>= net8.0) (< netstandard1.1) (>= win8)) (&& (>= net8.0) (< netstandard2.0) (>= wpa81)) (&& (>= net8.0) (>= uap10.1)) (&& (>= net8.0) (>= xamarinios)) (&& (>= net8.0) (>= xamarinmac)) (&& (>= net8.0) (>= xamarintvos)) (&& (>= net8.0) (>= xamarinwatchos))
+    System.Security.Cryptography.ProtectedData (4.7) - restriction: >= net8.0
+    System.Text.Encodings.Web (9.0) - restriction: >= net8.0
+    System.Text.Json (9.0) - restriction: >= net8.0
       System.IO.Pipelines (>= 9.0) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
       System.Text.Encodings.Web (>= 9.0) - restriction: || (>= net462) (&& (>= net8.0) (< net9.0)) (&& (< net8.0) (>= netstandard2.0))
+    System.Threading.Tasks.Extensions (4.5.4) - restriction: >= net8.0
     YamlDotNet (16.0) - restriction: >= net8.0

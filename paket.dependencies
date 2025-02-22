@@ -6,5 +6,7 @@ lowest_matching true
 nuget Aspire.Hosting >= 9.0
 nuget Aspire.Hosting.AppHost >= 9.0
 nuget Aspire.Hosting.AWS >= 9.0
+nuget Aspire.Hosting.Azure
+nuget Aspire.Hosting.SqlServer
 nuget FSharp.Core >= 9.0
 nuget Microsoft.Extensions.ServiceDiscovery >= 9.0
