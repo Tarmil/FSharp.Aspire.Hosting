@@ -1,0 +1,28 @@
+name: Publish
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup dotnet
+        uses: actions/setup-dotnet@v1
+        with:
+          dotnet-version: '9.0.200'
+
+      - name: Download nupkg
+        uses: dawidd6/action-download-artifact@v6
+        with:
+          github_token: ${{secrets.GITHUB_TOKEN}}
+          workflow: build.yml
+          commit: ${{github.sha}}
+          name: nuget
+
+      - name: Push to NuGet
+        run: dotnet nuget push *.symbols.nupkg
+               --api-key ${{secrets.NUGET_API_KEY}}
+               --source https://api.nuget.org/v3/index.json
+               --skip-duplicate

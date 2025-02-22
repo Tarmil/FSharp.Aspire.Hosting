@@ -1,4 +1,5 @@
 ﻿type project
+version 9.0.0
 authors Loïc Denuzière
 projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
