@@ -1,0 +1,13 @@
+type file
+id FSharp.Aspire.ProjectTemplates
+authors Loïc Denuzière
+projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
+repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
+repositoryType git
+description
+    Template for .NET Aspire AppHost in F#
+files
+    ../README.md ==> .
+    content/**/*.* ==> content
+    !**/bin/**/*
+    !**/obj/**/*

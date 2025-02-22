@@ -1,0 +1,31 @@
+{
+  "author": "Loïc Denuzière",
+  "classifications": [ "Common", ".NET Aspire", "Cloud" ],
+  "name": ".NET Aspire AppHost (F#)",
+  "tags": {
+    "language": "F#",
+    "type": "project"
+  },
+  "identity": "FSharp.Aspire.Hosting.AppHost",
+  "groupIdentity": "FSharp.Aspire",
+  "shortName": "fsharp-aspire-apphost",
+  "sourceName": "TemplateAppHost",
+  "preferNameDirectory": true,
+  "symbols": {
+    "framework": {
+      "type": "parameter",
+      "isRequired": false,
+      "description": "The target framework for the project",
+      "dataType": "choice",
+      "replaces": "TARGET_FRAMEWORK",
+      "choices": [
+        {"choice": "net8.0", "description": "Target net8.0"},
+        {"choice": "net9.0", "description": "Target net9.0"}
+      ],
+      "defaultValue": "net9.0"
+    }
+  },
+  "guids": [
+    "4c081123-6fc4-4f79-b0b8-5e4489e224c7"
+  ]
+}
