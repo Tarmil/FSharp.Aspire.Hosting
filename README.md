@@ -44,15 +44,45 @@ This project provides the necessary tooling to write an [Aspire](https://learn.m
 A number of Aspire integrations require additional code to be usable from an F# AppHost.
 [See below](#why-f-integrations) for a technical explanation of why that is the case.
 
-The table below lists the Aspire integrations that have been tested with an F# AppHost, and the NuGet package required to use them.
+The table below lists the Aspire integrations that have been checked to work with an F# AppHost, and the NuGet package required to use them.
 Some of them need an F#-specific package (which in turns references the standard package), and others simply need the same standard package as C# AppHosts.
 
-| Integration | Package                       |
-|:------------|:------------------------------|
-| AWS         | **FSharp**.Aspire.Hosting.Aws |
-| NodeJs      | Aspire.Hosting.NodeJs         |
+| Integration              | Package                                  |
+|:-------------------------|:-----------------------------------------|
+| AWS                      | **FSharp**.Aspire.Hosting.Aws            |
+| Azure AppInsights        | Aspire.Hosting.Azure.ApplicationInsights |
+| Azure Bicep              | **FSharp**.Aspire.Hosting.Azure          |
+| Azure Cognitive Services | Aspire.Hosting.Azure.CognitiveServices   |
+| Azure CosmosDB           | Aspire.Hosting.Azure.CosmosDB            |
+| Azure KeyVault           | Aspire.Hosting.Azure.KeyVault            |
+| Azure Redis              | Aspire.Hosting.Azure.Redis               |
+| Azure ServiceBus         | Aspire.Hosting.Azure.ServiceBus          |
+| Azure SQL                | Aspire.Hosting.Azure.Sql                 |
+| Azure Storage            | Aspire.Hosting.Azure.Storage             |
+| Dapr                     | Aspire.Hosting.Dapr                      |
+| Kafka                    | Aspire.Hosting.Kafka                     |
+| MongoDB                  | Aspire.Hosting.MongoDB                   |
+| MySQL                    | Aspire.Hosting.MySQL                     |
+| NodeJs                   | Aspire.Hosting.NodeJs                    |
+| Orleans                  | **FSharp**.Aspire.Hosting.Orleans        |
+| PostgreSQL               | Aspire.Hosting.PostgreSQL                |
+| RabbitMQ                 | Aspire.Hosting.RabbitMQ                  |
+| Redis                    | Aspire.Hosting.Redis                     |
+| SqlServer                | Aspire.Hosting.SqlServer                 |
+
+If you need an integration that is not listed above:
+
+* Try to add the standard package for this integration and to use it in the same way as documented for C#.
+
+* If it works, great! We will welcome a pull request to add it to the list.
+
+* If it fails, then you can submit an issue [on this project's repository](https://github.com/Tarmil/FSharp.Aspire.Hosting/issues).
+
+    The most likely issue you might encounter is a compilation error "No overload match for method" on a method provided by the integration.
 
 ### Why F# integrations?
+
+This section explains the technical reason why some integrations require additional F#-specific code.
 
 In Aspire, resources are represented by values of type `IResourceBuilder<T>`, where `T` is a concrete type that represents this kind of resource.
 For example, a project resource is represented by a value of type `IResourceBuilder<ProjectResource>`.
@@ -87,3 +117,7 @@ The solution is to provide an overload that, instead of taking an `IResourceBuil
 The NuGet package `FSharp.Aspire.Hosting.AppHost`, which is referenced out-of-the-box by the project template, provides all the relevant overloads for the standard Aspire interfaces.
 
 Additionally, since some integrations (such as `Aws`) use their own interfaces, an additional NuGet package (such as `FSharp.Aspire.Hosting.Aws`) provides the necessary overloads for these interfaces.
+
+## Acknowledgements
+
+Thanks to @baronfel for his help on ironing out the MSBuild script for project code generation.
