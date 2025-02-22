@@ -1,1 +1,12 @@
 ﻿type project
+authors Loïc Denuzière
+projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
+repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
+repositoryType git
+licenseExpression MIT
+description
+    Provides extension methods and resource definitions for a .NET Aspire AppHost in F# to configure an Orleans cluster
+tags aspire integration orleans hosting fsharp f#
+readme README.md
+files
+    ../../README.md ==> .

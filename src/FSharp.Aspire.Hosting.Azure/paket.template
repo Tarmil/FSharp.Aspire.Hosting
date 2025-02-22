@@ -1,1 +1,12 @@
 ﻿type project
+authors Loïc Denuzière
+projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
+repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
+repositoryType git
+licenseExpression MIT
+description
+    Provides core extensions to the .NET Aspire hosting model in F# for Azure services
+tags aspire integration azure hosting fsharp f#
+readme README.md
+files
+    ../../README.md ==> .
