@@ -1,7 +1,9 @@
 source https://api.nuget.org/v3/index.json
 storage none
+strategy min
+lowest_matching true
 
 nuget Aspire.Hosting >= 9.0
-nuget Aspire.Hosting.AppHost
-nuget FSharp.Core
-nuget Microsoft.Extensions.ServiceDiscovery
+nuget Aspire.Hosting.AppHost >= 9.0
+nuget FSharp.Core >= 9.0
+nuget Microsoft.Extensions.ServiceDiscovery >= 9.0
