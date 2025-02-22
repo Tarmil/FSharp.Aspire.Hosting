@@ -2,7 +2,17 @@
 
 let builder = DistributedApplication.CreateBuilder()
 
-let service = builder.AddProject<Projects.SampleWebService>("service")
+let awsConfig =
+    builder.AddAWSSDKConfig()
+
+let awsStack =
+    builder.AddAWSCloudFormationStack("aws-stack")
+        .WithReference(awsConfig)
+
+let service =
+    builder.AddProject<Projects.SampleWebService>("service")
+        .WithReference(awsConfig)
+        .WithReference(awsStack)
 
 let webapp =
     builder.AddProject<Projects.SampleWebApp>("web-app")

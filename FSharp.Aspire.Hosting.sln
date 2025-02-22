@@ -23,6 +23,8 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleWebService", "sample\
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SampleServiceDefaults", "sample\SampleServiceDefaults\SampleServiceDefaults.fsproj", "{761B1C20-7AC0-42D9-8905-1C51C64D376B}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Aspire.Hosting.Aws", "src\FSharp.Aspire.Hosting.Aws\FSharp.Aspire.Hosting.Aws.fsproj", "{14011F86-17F8-4041-A604-A47369670E2C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,10 @@ Global
 		{761B1C20-7AC0-42D9-8905-1C51C64D376B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{761B1C20-7AC0-42D9-8905-1C51C64D376B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{761B1C20-7AC0-42D9-8905-1C51C64D376B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14011F86-17F8-4041-A604-A47369670E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14011F86-17F8-4041-A604-A47369670E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14011F86-17F8-4041-A604-A47369670E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14011F86-17F8-4041-A604-A47369670E2C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{2350AAA3-4C80-43FE-ABAF-EAEFAAB18FF3} = {776B8C4F-7176-404D-BFA5-C02188911DB3}
@@ -59,5 +65,6 @@ Global
 		{2BB8A63A-E6BE-4045-91AB-5FEE8A106412} = {366B0B7A-A5B7-4936-A5A6-7CD76C09CF47}
 		{638B9F0D-DC38-4CA9-A047-AFAEFF3F2CC1} = {366B0B7A-A5B7-4936-A5A6-7CD76C09CF47}
 		{761B1C20-7AC0-42D9-8905-1C51C64D376B} = {366B0B7A-A5B7-4936-A5A6-7CD76C09CF47}
+		{14011F86-17F8-4041-A604-A47369670E2C} = {776B8C4F-7176-404D-BFA5-C02188911DB3}
 	EndGlobalSection
 EndGlobal

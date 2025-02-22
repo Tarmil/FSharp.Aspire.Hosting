@@ -3,6 +3,26 @@ STRATEGY: MIN
 LOWEST_MATCHING: TRUE
 NUGET
   remote: https://api.nuget.org/v3/index.json
+    Amazon.CDK.Asset.AwsCliV1 (2.2.202) - restriction: >= net8.0
+      Amazon.JSII.Runtime (>= 1.93 < 2.0) - restriction: >= netcoreapp3.1
+    Amazon.CDK.Asset.KubectlV20 (2.1.2) - restriction: >= net8.0
+      Amazon.JSII.Runtime (>= 1.70 < 2.0) - restriction: >= netcoreapp3.1
+    Amazon.CDK.Asset.NodeProxyAgentV6 (2.1) - restriction: >= net8.0
+      Amazon.JSII.Runtime (>= 1.103.1 < 2.0) - restriction: >= netcoreapp3.1
+    Amazon.CDK.CloudAssembly.Schema (38.0) - restriction: >= net8.0
+      Amazon.JSII.Runtime (>= 1.103.1 < 2.0) - restriction: >= netcoreapp3.1
+    Amazon.CDK.Lib (2.160) - restriction: >= net8.0
+      Amazon.CDK.Asset.AwsCliV1 (>= 2.2.202 < 3.0) - restriction: >= netcoreapp3.1
+      Amazon.CDK.Asset.KubectlV20 (>= 2.1.2 < 3.0) - restriction: >= netcoreapp3.1
+      Amazon.CDK.Asset.NodeProxyAgentV6 (>= 2.1 < 3.0) - restriction: >= netcoreapp3.1
+      Amazon.CDK.CloudAssembly.Schema (>= 38.0 < 39.0) - restriction: >= netcoreapp3.1
+      Amazon.JSII.Runtime (>= 1.103.1 < 2.0) - restriction: >= netcoreapp3.1
+      Constructs (>= 10.0 < 11.0) - restriction: >= netcoreapp3.1
+    Amazon.JSII.Runtime (1.103.1) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection (>= 8.0) - restriction: >= netcoreapp3.1
+      Microsoft.Extensions.Logging (>= 8.0) - restriction: >= netcoreapp3.1
+      Microsoft.Extensions.Logging.Console (>= 8.0) - restriction: >= netcoreapp3.1
+      Newtonsoft.Json (>= 13.0.3) - restriction: >= netcoreapp3.1
     Aspire.Hosting (9.0)
       AspNetCore.HealthChecks.Uris (>= 8.0.1) - restriction: >= net8.0
       Google.Protobuf (>= 3.28.2) - restriction: >= net8.0
@@ -54,9 +74,39 @@ NUGET
       Microsoft.Extensions.Primitives (>= 8.0) - restriction: && (>= net8.0) (< net9.0)
       Microsoft.Extensions.Primitives (>= 9.0) - restriction: >= net9.0
       Polly.Core (>= 8.4.2) - restriction: >= net8.0
+    Aspire.Hosting.AWS (9.0)
+      Amazon.CDK.Lib (>= 2.160) - restriction: >= net8.0
+      Aspire.Hosting (>= 9.0) - restriction: >= net8.0
+      AspNetCore.HealthChecks.Uris (>= 8.0.1) - restriction: >= net8.0
+      AWSSDK.CloudFormation (>= 3.7.400.36) - restriction: >= net8.0
+      AWSSDK.Core (>= 3.7.400.36) - restriction: >= net8.0
+      Google.Protobuf (>= 3.28.2) - restriction: >= net8.0
+      Grpc.AspNetCore (>= 2.66) - restriction: >= net8.0
+      Grpc.Net.ClientFactory (>= 2.66) - restriction: >= net8.0
+      Grpc.Tools (>= 2.67) - restriction: >= net8.0
+      Humanizer.Core (>= 2.14.1) - restriction: >= net8.0
+      JsonPatch.Net (>= 3.1.1) - restriction: >= net8.0
+      KubernetesClient (>= 15.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Abstractions (>= 8.0) - restriction: >= net8.0
+      Microsoft.Extensions.Configuration.Binder (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.DependencyInjection.Abstractions (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Diagnostics.HealthChecks (>= 8.0.11) - restriction: >= net8.0
+      Microsoft.Extensions.Hosting (>= 8.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Hosting.Abstractions (>= 8.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Http (>= 8.0.1) - restriction: >= net8.0
+      Microsoft.Extensions.Logging.Abstractions (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Options (>= 8.0.2) - restriction: >= net8.0
+      Microsoft.Extensions.Primitives (>= 8.0) - restriction: >= net8.0
+      Newtonsoft.Json (>= 13.0.3) - restriction: >= net8.0
+      Polly.Core (>= 8.4.2) - restriction: >= net8.0
     AspNetCore.HealthChecks.Uris (8.0.1) - restriction: >= net8.0
       Microsoft.Extensions.Diagnostics.HealthChecks (>= 8.0) - restriction: >= netstandard2.0
       Microsoft.Extensions.Http (>= 8.0) - restriction: >= netstandard2.0
+    AWSSDK.CloudFormation (3.7.400.36) - restriction: >= net8.0
+      AWSSDK.Core (>= 3.7.400.36 < 4.0)
+    AWSSDK.Core (3.7.400.36) - restriction: >= net8.0
+    Constructs (10.0) - restriction: >= net8.0
+      Amazon.JSII.Runtime (>= 1.26 < 2.0) - restriction: >= netcoreapp3.1
     Fractions (7.3) - restriction: >= net8.0
     FSharp.Core (9.0.100)
     Google.Protobuf (3.28.2) - restriction: >= net8.0
@@ -80,7 +130,7 @@ NUGET
       Grpc.Core.Api (>= 2.66) - restriction: >= netstandard2.0
     Grpc.Tools (2.67) - restriction: >= net8.0
     Humanizer.Core (2.14.1) - restriction: >= net8.0
-    IdentityModel (7.0) - restriction: >= net8.0
+    IdentityModel (5.2) - restriction: >= net8.0
     IdentityModel.OidcClient (5.2.1) - restriction: >= net8.0
       IdentityModel (>= 5.2) - restriction: >= netstandard2.0
       Microsoft.Extensions.Logging (>= 6.0) - restriction: >= netstandard2.0
@@ -263,6 +313,7 @@ NUGET
       Microsoft.IdentityModel.Abstractions (>= 7.1.2) - restriction: || (&& (>= net461) (< netstandard2.0)) (&& (< net461) (>= netstandard2.0)) (>= net462) (>= net6.0)
     Microsoft.IdentityModel.Tokens (7.1.2) - restriction: >= net8.0
       Microsoft.IdentityModel.Logging (>= 7.1.2) - restriction: || (&& (>= net461) (< netstandard2.0)) (&& (< net461) (>= netstandard2.0)) (>= net462) (>= net6.0)
+    Newtonsoft.Json (13.0.3) - restriction: >= net8.0
     Polly.Core (8.4.2) - restriction: >= net8.0
     System.Diagnostics.DiagnosticSource (9.0) - restriction: || (&& (>= net462) (>= net8.0)) (&& (>= net8.0) (< net9.0))
     System.Diagnostics.EventLog (9.0) - restriction: >= net8.0
