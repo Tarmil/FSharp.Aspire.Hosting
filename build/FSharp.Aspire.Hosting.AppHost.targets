@@ -2,7 +2,7 @@
 <Project>
   <PropertyGroup>
     <!-- Suppress warning for non-C# app host project -->
-    <NoWarn Condition="'$(Language)' == 'F#'">$(NoWarn);ASPIRE001</NoWarn>
+    <NoWarn Condition="'$(MSBuildProjectExtension)' == '.fsproj'">$(NoWarn);ASPIRE001</NoWarn>
   </PropertyGroup>
 
   <Target Name="_FSharpWriteProjectMetadataSources"

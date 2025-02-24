@@ -2,6 +2,6 @@
 <Project>
   <PropertyGroup>
     <!-- Suppress error for non-C# project -->
-    <Protobuf_Generator Condition=" '$(Protobuf_Generator)' == '' and '$(Language)' == 'F#' ">FSharp</Protobuf_Generator>
+    <Protobuf_Generator Condition=" '$(Protobuf_Generator)' == '' and '$(MSBuildProjectExtension)' == '.fsproj' ">FSharp</Protobuf_Generator>
   </PropertyGroup>
 </Project>
