@@ -15,3 +15,5 @@ files
     ../../README.md ==> .
 dependencies
     Aspire.Hosting.AppHost >= 9.0
+excludeddependencies
+    Microsoft.SourceLink.GitHub

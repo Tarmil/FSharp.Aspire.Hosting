@@ -11,3 +11,5 @@ tags aspire integration aws hosting fsharp f#
 readme README.md
 files
     ../../README.md ==> .
+excludeddependencies
+    Microsoft.SourceLink.GitHub
