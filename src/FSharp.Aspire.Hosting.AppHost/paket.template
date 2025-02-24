@@ -10,8 +10,8 @@ description
 tags aspire hosting fsharp f#
 readme README.md
 files
-    ../../build/FSharp.Aspire.Hosting.props ==> build/net8.0
-    ../../build/FSharp.Aspire.Hosting.targets ==> build/net8.0
+    ../../build/*.props ==> build/net8.0
+    ../../build/*.targets ==> build/net8.0
     ../../README.md ==> .
 dependencies
     Aspire.Hosting.AppHost >= 9.0
