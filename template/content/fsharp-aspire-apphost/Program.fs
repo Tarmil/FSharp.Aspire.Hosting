@@ -1,6 +1,6 @@
 open Aspire.Hosting
 
-let builder = DistributedApplication.CreateBuilder()
+let builder = DistributedApplication.CreateBuilder(System.Environment.GetCommandLineArgs())
 
 // Declare your resources here!
 
