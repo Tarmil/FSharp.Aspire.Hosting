@@ -5,6 +5,7 @@ projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryType git
 licenseExpression Apache-2.0
+licenseUrl https://licenses.nuget.org/Apache-2.0
 description
     Provides core extensions to the .NET Aspire hosting model in F# for Azure services
 tags aspire integration azure hosting fsharp f#

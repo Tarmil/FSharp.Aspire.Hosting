@@ -5,6 +5,7 @@ projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryType git
 licenseExpression Apache-2.0
+licenseUrl https://licenses.nuget.org/Apache-2.0
 description
     Provides extension methods and resources definition for a .NET Aspire AppHost in F# to configure the AWS SDK for .NET and AWS application resources
 tags aspire integration aws hosting fsharp f#

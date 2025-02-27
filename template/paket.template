@@ -6,6 +6,7 @@ projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryType git
 licenseExpression Apache-2.0
+licenseUrl https://licenses.nuget.org/Apache-2.0
 description
     Template for .NET Aspire AppHost in F#
 tags aspire hosting project template fsharp f#
