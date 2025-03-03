@@ -23,6 +23,30 @@
         {"choice": "net9.0", "description": "Target net9.0"}
       ],
       "defaultValue": "net9.0"
+    },
+    "httpPort": {
+      "type": "generated",
+      "generator": "port",
+      "replaces": "15081",
+      "parameters": { "fallback": "15081" }
+    },
+    "httpsPort": {
+      "type": "generated",
+      "generator": "port",
+      "replaces": "17087",
+      "parameters": { "fallback": "17087" }
+    },
+    "dashboardOltpEndpointUrl": {
+      "type": "generated",
+      "generator": "port",
+      "replaces": "21189",
+      "parameters": { "fallback": "21189" }
+    },
+    "resourceServiceEndpointUrl": {
+      "type": "generated",
+      "generator": "port",
+      "replaces": "22237",
+      "parameters": { "fallback": "22237" }
     }
   },
   "guids": [
