@@ -22,7 +22,7 @@ jobs:
           name: nuget
 
       - name: Push to NuGet
-        run: dotnet nuget push *.symbols.nupkg
+        run: dotnet nuget push *.symbols.nupkg FSharp.Aspire.ProjectTemplates.*.nupkg
                --api-key ${{secrets.NUGET_API_KEY}}
                --source https://api.nuget.org/v3/index.json
                --skip-duplicate
