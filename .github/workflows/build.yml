@@ -23,7 +23,7 @@ jobs:
           dotnet-version: '9.0.200'
 
       - name: NuGet cache
-        uses: actions/cache@v1
+        uses: actions/cache@v4
         with:
           path: ~/.nuget/packages
           key: ${{ runner.os }}-nuget-${{ hashFiles('.config/dotnet-tools.json', 'paket.lock') }}
