@@ -1,5 +1,9 @@
 # Write your Aspire AppHost in F#!
 
+[![Build](https://github.com/tarmil/fsharp.aspire.hosting/actions/workflows/build.yml/badge.svg)](https://github.com/tarmil/fsharp.aspire.hosting/actions/workflows/build.yml)
+[![Nuget](https://img.shields.io/nuget/vpre/FSharp.Aspire.ProjectTemplates?logo=nuget&label=project%20template)](https://nuget.org/packages/FSharp.Aspire.ProjectTemplates)
+[![Nuget](https://img.shields.io/nuget/vpre/FSharp.Aspire.Hosting.AppHost?logo=nuget&label=core%20library)](https://nuget.org/packages/FSharp.Aspire.Hosting.AppHost)
+
 This project provides the necessary tooling to write an [Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview) application host in F#.
 
 ## Getting started
