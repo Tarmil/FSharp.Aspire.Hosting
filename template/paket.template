@@ -1,6 +1,6 @@
 type file
 id FSharp.Aspire.ProjectTemplates
-version 9.0.0
+version 9.0.1
 authors Loïc Denuzière
 projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
