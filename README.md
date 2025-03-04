@@ -6,6 +6,8 @@
 
 This project provides the necessary tooling to write an [Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview) application host in F#.
 
+It supports Aspire 9.0 and 9.1 on .NET 8 and .NET 9.
+
 ## Getting started
 
 * Install the project template:
