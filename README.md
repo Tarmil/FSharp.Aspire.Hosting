@@ -29,7 +29,8 @@ It supports Aspire 9.0 and 9.1 on .NET 8 and .NET 9.
     ```fsharp
     open Aspire.Hosting
 
-    let builder = DistributedApplication.CreateBuilder(System.Environment.GetCommandLineArgs())
+    let args = System.Environment.GetCommandLineArgs()[1..]
+    let builder = DistributedApplication.CreateBuilder(args)
 
     let service = builder.AddProject<Projects.MyProjectWebService>("service")
 
