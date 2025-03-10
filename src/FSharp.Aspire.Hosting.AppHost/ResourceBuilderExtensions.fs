@@ -8,6 +8,18 @@ open Aspire.Hosting.ApplicationModel
 // because the two WithReference methods differ only by their constraints,
 // and therefore can't be overloads of one another.
 
+type ResourceBuilderExtensions =
+
+    [<Extension>]
+    static member WithParentRelationship<'Child, 'Parent
+            when 'Child :> IResource
+            and 'Parent :> IResource>
+        (
+            builder: IResourceBuilder<'Child>,
+            parent: IResourceBuilder<'Parent>
+        ) : IResourceBuilder<'Child> =
+        builder.WithParentRelationship(parent :?> IResourceBuilder<IResource>)
+
 type ResourceBuilderWithServiceDiscoveryExtensions =
 
     [<Extension>]
