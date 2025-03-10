@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json.schemastore.org/aspire-8.0.json",
+  "resources": {
+    "aws-stack": {
+      "type": "aws.cloudformation.stack.v0",
+      "stack-name": "aws-stack",
+      "references": [
+        {
+          "target-resource": "service"
+        }
+      ]
+    },
+    "sql-server": {
+      "type": "container.v0",
+      "connectionString": "Server={sql-server.bindings.tcp.host},{sql-server.bindings.tcp.port};User ID=sa;Password={sql-server-password.value};TrustServerCertificate=true",
+      "image": "mcr.microsoft.com/mssql/server:2022-latest",
+      "env": {
+        "ACCEPT_EULA": "Y",
+        "MSSQL_SA_PASSWORD": "{sql-server-password.value}"
+      },
+      "bindings": {
+        "tcp": {
+          "scheme": "tcp",
+          "protocol": "tcp",
+          "transport": "tcp",
+          "targetPort": 1433
+        }
+      }
+    },
+    "azure-stack": {
+      "type": "azure.bicep.v0",
+      "path": "azure-stack.module.bicep",
+      "params": {
+        "sqlServer": "{sql-server.connectionString}"
+      }
+    },
+    "service": {
+      "type": "project.v0",
+      "path": "../../SampleWebService/SampleWebService.fsproj",
+      "env": {
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES": "true",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_RETRY": "in_memory",
+        "ASPNETCORE_FORWARDEDHEADERS_ENABLED": "true",
+        "HTTP_PORTS": "{service.bindings.http.targetPort}",
+        "AZURE_SERVICE_URL": "{azure-stack.outputs.azureServiceUrl}",
+        "Orleans__Clustering__ProviderType": "SqlServerServer",
+        "Orleans__Clustering__ServiceKey": "sql-server",
+        "ConnectionStrings__sql-server": "{sql-server.connectionString}",
+        "Orleans__Streaming__sql-server__ProviderType": "SqlServerServer",
+        "Orleans__Streaming__sql-server__ServiceKey": "sql-server",
+        "Orleans__ClusterId": "{orleans-cluster-id.value}",
+        "Orleans__ServiceId": "{orleans-service-id.value}",
+        "Orleans__EnableDistributedTracing": "true",
+        "Orleans__Reminders__ProviderType": "SqlServerServer",
+        "Orleans__Reminders__ServiceKey": "sql-server",
+        "Orleans__GrainStorage__sql-server__ProviderType": "SqlServerServer",
+        "Orleans__GrainStorage__sql-server__ServiceKey": "sql-server",
+        "Orleans__GrainDirectory__sql-server__ProviderType": "SqlServerServer",
+        "Orleans__GrainDirectory__sql-server__ServiceKey": "sql-server",
+        "Orleans__Endpoints__SiloPort": "{service.bindings.orleans-silo.targetPort}",
+        "Orleans__Endpoints__GatewayPort": "{service.bindings.orleans-gateway.targetPort}"
+      },
+      "bindings": {
+        "http": {
+          "scheme": "http",
+          "protocol": "tcp",
+          "transport": "http"
+        },
+        "https": {
+          "scheme": "https",
+          "protocol": "tcp",
+          "transport": "http"
+        },
+        "orleans-silo": {
+          "scheme": "tcp",
+          "protocol": "tcp",
+          "transport": "tcp",
+          "targetPort": 8000
+        },
+        "orleans-gateway": {
+          "scheme": "tcp",
+          "protocol": "tcp",
+          "transport": "tcp",
+          "targetPort": 8001
+        }
+      }
+    },
+    "web-app": {
+      "type": "project.v0",
+      "path": "../../SampleWebApp/SampleWebApp.fsproj",
+      "env": {
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES": "true",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true",
+        "OTEL_DOTNET_EXPERIMENTAL_OTLP_RETRY": "in_memory",
+        "ASPNETCORE_FORWARDEDHEADERS_ENABLED": "true",
+        "HTTP_PORTS": "{web-app.bindings.http.targetPort}",
+        "services__service__http__0": "{service.bindings.http.url}",
+        "services__service__https__0": "{service.bindings.https.url}",
+        "services__service__orleans-silo__0": "{service.bindings.orleans-silo.url}",
+        "services__service__orleans-gateway__0": "{service.bindings.orleans-gateway.url}"
+      },
+      "bindings": {
+        "http": {
+          "scheme": "http",
+          "protocol": "tcp",
+          "transport": "http"
+        },
+        "https": {
+          "scheme": "https",
+          "protocol": "tcp",
+          "transport": "http"
+        }
+      }
+    },
+    "sql-server-password": {
+      "type": "parameter.v0",
+      "value": "{sql-server-password.inputs.value}",
+      "inputs": {
+        "value": {
+          "type": "string",
+          "secret": true,
+          "default": {
+            "generate": {
+              "minLength": 22,
+              "minLower": 1,
+              "minUpper": 1,
+              "minNumeric": 1
+            }
+          }
+        }
+      }
+    },
+    "orleans-cluster-id": {
+      "type": "parameter.v0",
+      "value": "{orleans-cluster-id.inputs.value}",
+      "inputs": {
+        "value": {
+          "type": "string",
+          "default": {
+            "generate": {
+              "minLength": 25,
+              "upper": false,
+              "special": false
+            }
+          }
+        }
+      }
+    },
+    "orleans-service-id": {
+      "type": "parameter.v0",
+      "value": "{orleans-service-id.inputs.value}",
+      "inputs": {
+        "value": {
+          "type": "string",
+          "default": {
+            "generate": {
+              "minLength": 25,
+              "upper": false,
+              "special": false
+            }
+          }
+        }
+      }
+    }
+  }
+}

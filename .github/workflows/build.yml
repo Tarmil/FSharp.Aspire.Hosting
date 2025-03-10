@@ -34,6 +34,13 @@ jobs:
       - name: Build
         run: dotnet build -c Release
 
+      - name: Test
+        run: |
+          mkdir -p sample/SampleAppHost/output-test && \
+          dotnet run --project sample/SampleAppHost --launch-profile http -- \
+            --publisher manifest --output-path sample/SampleAppHost/output-test/aspire-manifest.json && \
+          diff -ruw --color sample/SampleAppHost/output/ sample/SampleAppHost/output-test/
+
       - name: Pack
         run: dotnet paket pack --symbols bin
 
