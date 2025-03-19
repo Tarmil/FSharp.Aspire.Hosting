@@ -7,4 +7,5 @@ tmp/
 bin/
 obj/
 paket-files/
-sample/SampleAppHost/output-test/
+tests/actual/
+tests/work/

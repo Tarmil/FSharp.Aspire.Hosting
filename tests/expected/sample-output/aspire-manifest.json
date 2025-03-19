@@ -36,7 +36,7 @@
     },
     "service": {
       "type": "project.v0",
-      "path": "../../SampleWebService/SampleWebService.fsproj",
+      "path": "../../../sample/SampleWebService/SampleWebService.fsproj",
       "env": {
         "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES": "true",
         "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true",
@@ -88,7 +88,7 @@
     },
     "web-app": {
       "type": "project.v0",
-      "path": "../../SampleWebApp/SampleWebApp.fsproj",
+      "path": "../../../sample/SampleWebApp/SampleWebApp.fsproj",
       "env": {
         "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EXCEPTION_LOG_ATTRIBUTES": "true",
         "OTEL_DOTNET_EXPERIMENTAL_OTLP_EMIT_EVENT_LOG_ATTRIBUTES": "true",
