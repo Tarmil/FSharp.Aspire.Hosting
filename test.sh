@@ -2,24 +2,27 @@
 
 set -e
 
+cd tests
+
 ### Generate manifest from the sample project
 
-mkdir -p tests/actual/sample-output
-dotnet run --project sample/SampleAppHost --launch-profile http -- \
-    --publisher manifest --output-path "$PWD/tests/actual/sample-output/aspire-manifest.json"
+mkdir -p actual/sample-output
+dotnet run --project ../sample/SampleAppHost --launch-profile http -- \
+    --publisher manifest --output-path "$PWD/actual/sample-output/aspire-manifest.json"
 
 ### Generate manifest from the project template
 
-mkdir -p tests/actual/template-output
+mkdir -p actual/template-output
 if dotnet new list fsharp-aspire-apphost 2>&1 >/dev/null; then
     dotnet new uninstall FSharp.Aspire.ProjectTemplates
 fi
-dotnet new install bin/FSharp.Aspire.ProjectTemplates.*.nupkg
-rm -rf tests/work
-dotnet new fsharp-aspire-apphost -o tests/work/TemplateInstance
-dotnet run --project tests/work/TemplateInstance --launch-profile http -- \
-    --publisher manifest --output-path "$PWD/tests/actual/template-output/aspire-manifest.json"
+dotnet new install ../bin/FSharp.Aspire.ProjectTemplates.*.nupkg
+rm -rf work
+dotnet new fsharp-aspire-apphost -o work/TemplateInstance
+dotnet add work/TemplateInstance package FSharp.Aspire.Hosting.AppHost -s "$(dirname $PWD)/bin"
+dotnet run --project work/TemplateInstance --launch-profile http -- \
+    --publisher manifest --output-path "$PWD/actual/template-output/aspire-manifest.json"
 
 ### Check the generated files
 
-diff -ruw --color tests/expected/ tests/actual/
+diff -ruw --color expected actual
