@@ -2,6 +2,8 @@
 
 set -e
 
+ROOTDIR="$PWD"
+
 cd tests
 
 ### Generate manifest from the sample project
@@ -23,14 +25,17 @@ fi
 dotnet new install ../bin/FSharp.Aspire.ProjectTemplates.*.nupkg
 rm -rf work
 dotnet new fsharp-aspire-apphost -o work/TemplateInstance
-dotnet add work/TemplateInstance package FSharp.Aspire.Hosting.AppHost \
-    -s "$(dirname $PWD)/bin"
+
+cd work/TemplateInstance
+dotnet new nugetconfig
+dotnet nuget add source -n build-artifact "$ROOTDIR/bin"
+dotnet add package FSharp.Aspire.Hosting.AppHost
 dotnet run \
-    --project work/TemplateInstance \
     --launch-profile http \
     -- \
     --publisher manifest \
-    --output-path "$PWD/actual/template-output/aspire-manifest.json"
+    --output-path "$PWD/../../actual/template-output/aspire-manifest.json"
+cd ../..
 
 ### Check the generated files
 
