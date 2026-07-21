@@ -6,7 +6,7 @@
 
 This project provides the necessary tooling to write an [Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview) application host in F#.
 
-It supports Aspire 13 on .NET 10.
+It supports Aspire 13 on .NET 8, 9, and 10.
 
 ## Getting started
 
