@@ -17,12 +17,13 @@
       "isRequired": false,
       "description": "The target framework for the project",
       "dataType": "choice",
-      "replaces": "net8.0",
+      "replaces": "net10.0",
       "choices": [
         {"choice": "net8.0", "description": "Target net8.0"},
-        {"choice": "net9.0", "description": "Target net9.0"}
+        {"choice": "net9.0", "description": "Target net9.0"},
+        {"choice": "net10.0", "description": "Target net10.0"}
       ],
-      "defaultValue": "net9.0"
+      "defaultValue": "net10.0"
     },
     "httpPort": {
       "type": "generated",

@@ -6,7 +6,7 @@
 
 This project provides the necessary tooling to write an [Aspire](https://learn.microsoft.com/en-us/dotnet/aspire/get-started/aspire-overview) application host in F#.
 
-It supports Aspire 9.0 and 9.1 on .NET 8 and .NET 9.
+It supports Aspire 13 on .NET 10.
 
 ## Getting started
 
@@ -72,7 +72,6 @@ Some of them need an <img src="docs/FSharp.png" width="16"> F#-specific package,
 | Azure ServiceBus         | <img src="docs/Aspire.png" width="16"> Aspire.Hosting.Azure.ServiceBus                                                                                                       |
 | Azure SignalR            | <img src="docs/Aspire.png" width="16"> Aspire.Hosting.Azure.SignalR                                                                                                          |
 | Azure SQL                | <img src="docs/Aspire.png" width="16"> Aspire.Hosting.Azure.Sql                                                                                                              |
-| Azure Static Web Apps    | <img src="docs/FSharp.png" width="16"> FSharp.CommunityToolkit.Aspire.Hosting.Azure.StaticWebApps                                                                            |
 | Azure Storage            | <img src="docs/Aspire.png" width="16"> Aspire.Hosting.Azure.Storage                                                                                                          |
 | Azure Web PubSub         | <img src="docs/Aspire.png" width="16"> Aspire.Hosting.Azure.WebPubSub                                                                                                        |
 | Bun                      | <img src="docs/CommunityToolkit.png" width="16"> CommunityToolkit.Aspire.Hosting.Bun                                                                                         |
