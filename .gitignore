@@ -9,3 +9,4 @@ obj/
 paket-files/
 tests/actual/
 tests/work/
+aspire.config.json
