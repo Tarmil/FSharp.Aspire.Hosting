@@ -9,12 +9,11 @@ cd tests
 ### Generate manifest from the sample project
 
 mkdir -p actual/sample-output
-dotnet run \
-    --project ../sample/SampleAppHost \
-    --launch-profile http \
-    -- \
-    --publisher manifest \
-    --output-path "$PWD/actual/sample-output/aspire-manifest.json"
+dotnet aspire do publish-manifest \
+    --apphost ../sample/SampleAppHost/SampleAppHost.fsproj \
+    --output-path "$PWD/actual/sample-output/aspire-manifest.json" \
+    --non-interactive \
+    --nologo
 
 ### Generate manifest from the project template
 
@@ -30,11 +29,11 @@ cd work/TemplateInstance
 dotnet new nugetconfig
 dotnet nuget add source -n build-artifact "$ROOTDIR/bin"
 dotnet add package FSharp.Aspire.Hosting.AppHost
-dotnet run \
-    --launch-profile http \
-    -- \
-    --publisher manifest \
-    --output-path "$PWD/../../actual/template-output/aspire-manifest.json"
+dotnet aspire do publish-manifest \
+    --apphost TemplateInstance.fsproj \
+    --output-path "$PWD/../../actual/template-output/aspire-manifest.json" \
+    --non-interactive \
+    --nologo
 cd ../..
 
 ### Check the generated files

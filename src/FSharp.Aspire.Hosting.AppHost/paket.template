@@ -1,5 +1,5 @@
 type project
-version 9.0.0
+version 13.0.0
 authors Loïc Denuzière
 projectUrl https://github.com/tarmil/FSharp.Aspire.Hosting
 repositoryUrl https://github.com/tarmil/FSharp.Aspire.Hosting
@@ -15,6 +15,7 @@ files
     ../../build/*.targets ==> build/net8.0
     ../../README.md ==> .
 dependencies
-    Aspire.Hosting.AppHost >= 9.0
+    Aspire.Hosting.AppHost >= 13.0
+    FSharp.Core >= 8.0
 excludeddependencies
     Microsoft.SourceLink.GitHub
