@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project>
+  <PropertyGroup>
+    <NoWarn>NU1510;$(NoWarn)</NoWarn> <!-- PackageReference will not be pruned -->
+  </PropertyGroup>
+</Project>
